@@ -135,3 +135,26 @@ label:hover .button {
         margin-bottom: 1.5rem;
     }
 }
+
+@media only screen and (max-height: 768px) {
+
+    .wrapper__main{
+        padding: 2rem;
+    }
+
+    .container__bottom{
+        flex-direction: column-reverse;
+        gap: 1rem
+    }
+
+    .container__image{
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+
+    .title{
+        font-size: .9rem;
+    }
+}
