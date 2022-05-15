@@ -32,6 +32,7 @@ body {
 .wrapper__image {
     display: flex;
     transition-duration: .4s;
+    transition-timing-function: ease-in-out;
 }
 
 .image {
@@ -52,6 +53,7 @@ body {
 .wrapper__title {
     display: flex;
     transition-duration: .7s;
+    transition-timing-function: ease-in-out;
 }
 
 .title {
@@ -118,6 +120,13 @@ label:hover .button {
 .slider input:nth-child(3):hover ~ .container__bottom > .wrapper__button label:nth-of-type(3) > span,
 .slider input:nth-child(4):hover ~ .container__bottom > .wrapper__button label:nth-of-type(4) > span{
     border-color: white;
+}
+
+.slider input:nth-child(1):active ~ .container__bottom > .wrapper__button label:nth-of-type(1) > span,
+.slider input:nth-child(2):active ~ .container__bottom > .wrapper__button label:nth-of-type(2) > span,
+.slider input:nth-child(3):active ~ .container__bottom > .wrapper__button label:nth-of-type(3) > span,
+.slider input:nth-child(4):active ~ .container__bottom > .wrapper__button label:nth-of-type(4) > span {
+    transform: scale(1.2);
 }
 
 @media only screen and (max-width: 768px) {
